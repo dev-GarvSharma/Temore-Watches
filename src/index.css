@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.watchBanner {
+  background-image: url("./assets/Mask-Group-16.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
