@@ -78,7 +78,7 @@ function Products() {
             </div>
             <br />
             <div className='lg:px-32 md:grid lg:grid-cols-4 mx-10 '>
-                <div className='col-span-1 md:sticky top-10 md:px-2'>
+                <div className='col-span-1 md:px-2'>
                     <Accordion activeIndex={0}>
                         <AccordionTab header="Premium Watches">
                             <ul className='cursor-pointer'>

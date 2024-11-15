@@ -77,7 +77,7 @@ const Home = () => {
 				</div>
 				<div className='col-span-2 bg-[#f42c37] rounded-3xl flex justify-center items-center relative' >
 					<img src={Image2} className='h-80 mt-10 ml-5' />
-					<button className='bg-white hover:scale-105 p-2 text-black px-16 rounded-lg absolute bottom-3 hover:bg-red-500 hover:text-white transition-all'>Browse</button>
+					<button className='bg-white hover:scale-105 p-2 text-black px-16 rounded-lg absolute bottom-3  transition-all'>Browse</button>
 				</div>
 			</div>
 			<div className='md:grid lg:grid-cols-4 md:grid-cols-2 h-[350px] lg:gap-10 flex flex-col gap-4 mb-[800px] md:mb-[450px] lg:my-8'>
@@ -215,7 +215,21 @@ const Home = () => {
 			</div>
 
 			<br />
-			<div className='h-[350px] bg-[#57d68b] rounded-3xl watchBanner'></div>
+			<div className="h-[350px] bg-[#57d68b] rounded-3xl watchBanner flex watchBanner text-xl items-center relative">
+				{/* <img src={Banner} className='absolute left-48 h-96 ' /> */}
+				<div className="text-white px-4 pl-20 ">
+					<h1 className="text-3xl md:text-5xl font-bold mb-2">
+						Discover Timeless Elegance
+					</h1>
+					<p className="text-xl md:text-2xl mb-4">
+						Find your perfect watch to match your style and personality.
+					</p>
+					<button className="bg-white text-[#57d68b] font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition">
+						Shop Now
+					</button>
+				</div>
+				{/* <img src={Banner} className='absolute right-48 h-96 ' /> */}
+			</div>
 			<br />
 		</div>
 	)

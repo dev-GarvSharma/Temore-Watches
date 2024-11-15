@@ -19,7 +19,7 @@ const LoginPage = () => {
             const res = await login(values)
 
             if (res.status == API_RESPONSE_CODES.OK) {
-                // LocalStorageService.setTokenData(res.data)
+                LocalStorageService.setTokenData(res.data.data)
                 LocalStorageService.setUserData(JSON.stringify(res.data.data));
                 toast.success(res.message)
                 dispatch(setLoggedIn(true))
